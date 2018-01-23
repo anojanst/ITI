@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "iti.thekoders.com"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "iti.thekoders.com"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "iti.thekoders.com"
+        }
+    },
+    "dependent_plugins": {}
+}
