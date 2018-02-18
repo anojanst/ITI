@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+  
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Your app title -->
+    <title>ITI</title>
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal"  style="background-color: #2980b9; padding: 0;">
+        <div style="color: white; padding: 15px 15px 0pc 15px; margin-bottom: -25px;"><i class="fa fa-list"></i> Menu</div>
+        <div class="content-block" style="">
+            <div style="height: 20px; padding: 10px; background-color: #fff; margin-left: -15px; margin-right: -15px;">
+                <a href="index.html"><i class="fa fa-home"></i> Home</a>
+            </div>
+
+            <div style="height: 30px; padding-top: 10px;">
+                <a href="about.html" style="color:#fff;"><i class="fa fa-university"></i> About Us</a>
+            </div>
+            
+            <div style="height: 20px; padding: 10px; background-color: #fff; margin-left: -15px; margin-right: -15px;"><a href="courses.html"><i class="fa fa-language"></i> Courses</a></div>
+            
+            <div style="height: 30px; padding-top: 10px; color:#fff;"><a href="faculty.html" style="color:#fff;"><i class="fa fa-building"></i> Faculty</a></div>
+            
+            <div style="height: 20px; padding: 10px; background-color: #fff; margin-left: -15px; margin-right: -15px;"><a><i class="fa fa-edit"></i> Apply Now</a></div>
+        </div>
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar main-color">
+                <div class="navbar-inner">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="left sliding">
+                        <!--
+                          Right link contains only icon - additional "icon-only" class
+                          Additional "open-panel" class tells app to open panel when we click on this link
+                        -->
+                        <a href="#" class="link icon-only open-panel" style="color: #fff;"><i class="fa fa-list"></i></a>
+                    </div>
+                    <div class="center">ITI</div>
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="content-block">
+                          
+
+                            <div class="home">
+                                    <img src="img/courses.jpg" style="width: 100%;">
+                                    <h3 style="margin-top: -1px; color: #2980b9;">Welcome To Our Official App</h3>
+                                    <p style="margin-top: -8px;">We are proud to introduce our new app to our students for making their experience great! We believe this application will impress you.</p>
+									<div class="col-padded"><!-- inner custom column -->
+                                            
+                        
+                     <div class="col-xs-12 form-online-enquiry">
+							<h1 class="title-titan">Faculty of Business</h1>
+							
+							<div>
+								<h3>Certificate Programs</h3>
+<h4><span style="color: #ff6600;">Certificate in Business (CIB)</span></h4>
+The Certificate of Business requires the completion of 5 units successfully. &nbsp;&nbsp;After successful completion of CIB, students can articulate into a Diploma in Management.
+
+&nbsp;
+<table style="width:100%">
+<tbody>
+<tr align="center" bgcolor="#0066FF">
+<td style="text-align: left;"><strong><span style="color: #ffffff;">Code</span></strong></td>
+<td style="text-align: left;" bgcolor="#0066FF"><span style="color: #ffffff;"><strong>Unit Name</strong></span></td>
+</tr>
+<tr>
+<td>1002</td>
+<td>Business Communication</td>
+</tr>
+<tr>
+<td>1003</td>
+<td>Microsoft Office Training</td>
+</tr>
+<tr>
+<td>1012</td>
+<td>Basic Accounting</td>
+</tr>
+<tr>
+<td>1013</td>
+<td>Principles of Management</td>
+</tr>
+<tr>
+<td>1014</td>
+<td>Business Maths</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<h4></h4>
+<h4><span style="color: #ff6600;">Certificate in Sales (CIS)</span></h4>
+The Certificate of Sales requires the completion of 5 units successfully. &nbsp;&nbsp;After successful completion of CIS, students can articulate into a Diploma in Marketing.
+<table style="width:100%">
+<tbody>
+<tr align="center" bgcolor="#0066FF">
+<td style="text-align: left;"><span style="color: #ffffff;"><strong>Code</strong></span></td>
+<td style="text-align: left;"><span style="color: #ffffff;"><strong>Unit Name</strong></span></td>
+</tr>
+<tr>
+<td>1002</td>
+<td>Business Communication</td>
+</tr>
+<tr>
+<td>1003</td>
+<td>Microsoft Office Training</td>
+</tr>
+<tr>
+<td>1012</td>
+<td>Basic Accounting</td>
+</tr>
+<tr>
+<td>1006</td>
+<td>Fundamentals of Marketing</td>
+</tr>
+<tr>
+<td>1007</td>
+<td>Salesmanship</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<h4><span style="color: #ff6600;">Certificate in HR Management (CHRM)</span></h4>
+The Certificate in Human Resource Management requires the completion of 5 units successfully.&nbsp;After successful completion of CHRM, students can articulate into a Diploma in Human Resource Management.
+<h4></h4>
+<table style="width:100%">
+<tbody>
+<tr align="center" bgcolor="#0066FF">
+<td style="text-align: left;"><span style="color: #ffffff;"><strong>Code</strong></span></td>
+<td style="text-align: left;"><span style="color: #ffffff;"><strong>Unit Name</strong></span></td>
+</tr>
+<tr>
+<td>1002</td>
+<td>Business Communication</td>
+</tr>
+<tr>
+<td>1003</td>
+<td>Microsoft Office Training</td>
+</tr>
+<tr>
+<td>1012</td>
+<td>Basic Accounting</td>
+</tr>
+<tr>
+<td>1015</td>
+<td>Principles of HR Management</td>
+</tr>
+<tr>
+<td>1011</td>
+<td>Organisational Behaviour</td>
+</tr>
+</tbody>
+</table>
+<h4></h4>
+<h4><span style="color: #ff6600;">Certificate in Accounting (CIA)</span></h4>
+The Certificate in Accounting requires the completion of 5 units successfully. &nbsp;After successful completion of CIA, students can articulate into the Diploma in Accounting program.
+
+&nbsp;
+<table style="width:100%">
+<tbody>
+<tr align="center" bgcolor="#0066FF">
+<td style="text-align: left;"><span style="color: #ffffff;"><strong>Code</strong></span></td>
+<td style="text-align: left;"><strong>Unit Name</strong></td>
+</tr>
+<tr>
+<td>1002</td>
+<td>Business Communication</td>
+</tr>
+<tr>
+<td>1003</td>
+<td>Microsoft Office Training</td>
+</tr>
+<tr>
+<td>1012</td>
+<td>Basic Accounting</td>
+</tr>
+<tr>
+<td>1014</td>
+<td>Business Maths</td>
+</tr>
+<tr>
+<td>1009</td>
+<td>Business Administration</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<h4></h4>
+<h3><span style="color: #000000;">Diploma Programs</span></h3>
+<h4></h4>
+<h4><strong><span style="color: #ff6600;">Diploma in Management (DIP.MGT)</span></strong></h4>
+&nbsp;
+
+The Dip. in Management requires the completion of 10 units successfully.
+
+&nbsp;
+
+&nbsp;
+<h4></h4>
+<strong>Semester One:</strong>
+<h4></h4>
+<table style="width:100%">
+<tbody>
+<tr valign="middle" bgcolor="#0066FF">
+<td style="text-align: left;"><span style="color: #ffffff;"><strong>Code</strong></span></td>
+<td><span style="color: #ffffff;"><strong>Unit Name</strong></span></td>
+</tr>
+<tr>
+<td>2041</td>
+<td>Business Writing</td>
+</tr>
+<tr>
+<td>2042</td>
+<td>Office Application</td>
+</tr>
+<tr>
+<td>2011</td>
+<td>Business Law</td>
+</tr>
+<tr>
+<td>1001</td>
+<td>Accounting I</td>
+</tr>
+<tr>
+<td>2017</td>
+<td>Introduction to Economics</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+
+&nbsp;
+<h4></h4>
+<strong>Semester Two:&nbsp;</strong>
+<h4></h4>
+<table style="width:100%">
+<tbody>
+<tr valign="middle" bgcolor="#0066FF">
+<td><span style="color: #ffffff;"><strong>Code</strong></span></td>
+<td><span style="color: #ffffff;"><strong>Unit Name</strong></span></td>
+</tr>
+<tr>
+<td>2043</td>
+<td>Marketing Management</td>
+</tr>
+<tr>
+<td>2044</td>
+<td>Entrepreneur &amp; Small Business</td>
+</tr>
+<tr>
+<td>2045</td>
+<td>Business Organisation &amp; Management</td>
+</tr>
+<tr>
+<td>2046</td>
+<td>Strategic Management</td>
+</tr>
+<tr>
+<td>2018</td>
+<td>HR Management</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<h4></h4>
+<h4><span style="color: #ff6600;">Diploma in Marketing (DIP. MKT)</span></h4>
+The Dip. in Marketing requires the completion of 10 units successfully.
+
+&nbsp;
+<h4></h4>
+<strong>Semester One:</strong>
+<h4></h4>
+<table style="width:100%">
+<tbody>
+<tr valign="middle" bgcolor="#0066FF">
+<td><span style="color: #ffffff;"><strong>Code</strong></span></td>
+<td><span style="color: #ffffff;"><strong>Unit Name</strong></span></td>
+</tr>
+<tr>
+<td>2041</td>
+<td>Business Writing</td>
+</tr>
+<tr>
+<td>2042</td>
+<td>Office Application</td>
+</tr>
+<tr>
+<td>2011</td>
+<td>Business Law</td>
+</tr>
+<tr>
+<td>1001</td>
+<td>Accounting I</td>
+</tr>
+<tr>
+<td>2017</td>
+<td>Introduction to Economics</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<h4></h4>
+<strong>Semester Two:&nbsp;</strong>
+<h4></h4>
+<table style="width:100%">
+<tbody>
+<tr valign="middle" bgcolor="#0066FF">
+<td><span style="color: #ffffff;"><strong>Code</strong></span></td>
+<td><span style="color: #ffffff;"><strong>Unit Name</strong></span></td>
+</tr>
+<tr>
+<td>2043</td>
+<td>Marketing Management</td>
+</tr>
+<tr>
+<td>2044</td>
+<td>Entrepreneur &amp; Small Business</td>
+</tr>
+<tr>
+<td>2016</td>
+<td>Consumer Behaviour</td>
+</tr>
+<tr>
+<td>2015</td>
+<td>Retail Marketing</td>
+</tr>
+<tr>
+<td>2047</td>
+<td>E-Marketing</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<h4></h4>
+<h4><span style="color: #ff6600;">Diploma in HR Management (DIP. HRM)</span></h4>
+The Dip. in Human Resource Management requires the completion of 10 units successfully.
+
+&nbsp;
+<h4></h4>
+<strong>Semester One:</strong>
+<h4></h4>
+<table style="width:100%">
+<tbody>
+<tr valign="middle" bgcolor="#0066FF">
+<td><span style="color: #ffffff;"><strong>Code</strong></span></td>
+<td><strong><span style="color: #ffffff;">Unit Name</span></strong></td>
+</tr>
+<tr>
+<td>2041</td>
+<td>Business Writing</td>
+</tr>
+<tr>
+<td>2042</td>
+<td>Office Application</td>
+</tr>
+<tr>
+<td>2034</td>
+<td>Human Resource Law in PNG</td>
+</tr>
+<tr>
+<td>1001</td>
+<td>Accounting I</td>
+</tr>
+<tr>
+<td>2027</td>
+<td>Introduction to Psychology</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<h4></h4>
+<strong>Semester Two:&nbsp;</strong>
+<h4></h4>
+<table style="width:100%">
+<tbody>
+<tr valign="middle" bgcolor="#0066FF">
+<td><span style="color: #ffffff;"><strong>Code</strong></span></td>
+<td><span style="color: #ffffff;"><strong>Unit Name</strong></span></td>
+</tr>
+<tr>
+<td>2032</td>
+<td>Leading &amp; Managing People</td>
+</tr>
+<tr>
+<td>2033</td>
+<td>Strategic HR Management</td>
+</tr>
+<tr>
+<td>2035</td>
+<td>Contemporary Issues in HRM</td>
+</tr>
+<tr>
+<td>2036</td>
+<td>International HRM</td>
+</tr>
+<tr>
+<td>2037</td>
+<td>HR Development</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<h4><span style="color: #ff6600;">Diploma in Accounting (DIP. ACC)</span></h4>
+The Diploma in Accounting requires the completion of 10 units successfully. &nbsp;After successful completion , students can articulate into the Advanced Diploma in Accounting program. &nbsp;Students automatically receive a student membership for the Association of Accounting Technicians (AAT), Australia.
+
+&nbsp;
+<h4></h4>
+<strong>Semester One:</strong>
+<h4></h4>
+<table style="width:100%">
+<tbody>
+<tr valign="middle" bgcolor="#0066FF">
+<td><span style="color: #ffffff;"><strong>Code</strong></span></td>
+<td><span style="color: #ffffff;"><strong>Unit Name</strong></span></td>
+</tr>
+<tr>
+<td>2041</td>
+<td>Business Writing</td>
+</tr>
+<tr>
+<td>2042</td>
+<td>Office Application</td>
+</tr>
+<tr>
+<td>2011</td>
+<td>Business Law</td>
+</tr>
+<tr>
+<td>1001</td>
+<td>Accounting I</td>
+</tr>
+<tr>
+<td>2012</td>
+<td>Cost and Budgeting I</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<h4></h4>
+<strong>Semester Two:&nbsp;</strong>
+<h4></h4>
+<table style="width:100%">
+<tbody>
+<tr valign="middle" bgcolor="#0066FF">
+<td><span style="color: #ffffff;"><strong>Code</strong></span></td>
+<td><span style="color: #ffffff;"><strong>Unit Name</strong></span></td>
+</tr>
+<tr>
+<td>2013</td>
+<td>Auditing</td>
+</tr>
+<tr>
+<td>2014</td>
+<td>Taxation</td>
+</tr>
+<tr>
+<td>2048</td>
+<td>Cost and Budgeting 2</td>
+</tr>
+<tr>
+<td>2010</td>
+<td>Accounting 2</td>
+</tr>
+<tr>
+<td>2049</td>
+<td>Financial Reporting</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<h4><span style="color: #ff6600;">Advance Diploma in Accounting (ADIP.ACC)</span></h4>
+The Advance Diploma in Accounting requires the completion of 10 units successfully.
+
+&nbsp;
+<h4></h4>
+<strong>Semester One:</strong>
+<h4></h4>
+<table style="width:100%">
+<tbody>
+<tr valign="middle" bgcolor="#0066FF">
+<td><span style="color: #ffffff;"><strong>Code</strong></span></td>
+<td><strong><span style="color: #ffffff;">Unit Name</span></strong></td>
+</tr>
+<tr>
+<td>3009</td>
+<td>Financial Accounting</td>
+</tr>
+<tr>
+<td>3010</td>
+<td>Management Accounting</td>
+</tr>
+<tr>
+<td>3011</td>
+<td>Intermediate Audit</td>
+</tr>
+<tr>
+<td>3015</td>
+<td>Introduction of Economics</td>
+</tr>
+<tr>
+<td>3016</td>
+<td>Elements of Information System</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<h4></h4>
+<strong>Semester Two:&nbsp;</strong>
+<table style="width:100%">
+<tbody>
+<tr valign="middle" bgcolor="#0066FF">
+<td><span style="color: #ffffff;"><strong>Code</strong></span></td>
+<td><span style="color: #ffffff;"><strong>Unit Name</strong></span></td>
+</tr>
+<tr>
+<td>3012</td>
+<td>Specialised Accounting Practive</td>
+</tr>
+<tr>
+<td>3013</td>
+<td>Corporate Tax</td>
+</tr>
+<tr>
+<td>3014</td>
+<td>Profesional Ethics</td>
+</tr>
+<tr>
+<td>3017</td>
+<td>Quantitative Methods of Business</td>
+</tr>
+<tr>
+<td>3018</td>
+<td>Principles of Management and Marketing</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<h3><span style="color: #ff6600;">Course Fees</span></h3>
+<strong>Certificate Courses:</strong> K2,850&nbsp;(K1,200 on registration, followed by approved installments.)
+<h4></h4>
+<strong>Diploma Courses: &nbsp;</strong>K7,500 (K1,200 on registration, followed by approved installments.)
+<h4></h4>
+<strong>Advanced Diploma in Accounting:</strong>&nbsp;&nbsp;K6000&nbsp;( K1,200 on registration followed by approved installments. )
+<h3><span style="color: #ff6600;">Entry Requirements:</span></h3>
+<h5>Certificate Courses:</h5>
+<ul>
+	<li>Successful completion of Grade 10 with passes in English and Mathematics</li>
+	<li>ITI Entry Test for matured working class (Conditions Apply).</li>
+</ul>
+<h5>Diploma Courses:</h5>
+<ul>
+	<li>Successful completion of grade 12 with&nbsp;“C” or above in English &amp; Mathematics from
+recognized schools/institutions including&nbsp;matriculation centers</li>
+	<li>“D” Grade plus ITI Entry Test</li>
+	<li>Adults with relevant work experience of 5 years and over Completion of certificate courses from recognized&nbsp;private and government institutions with pass&nbsp;grades</li>
+</ul>
+<h5><strong>Advanced Diploma in Accounting:</strong></h5>
+<ul>
+	<li>Successful completion of ITI Diploma in Accounting course or the equivalent in other&nbsp;Institutions recognised by ITI</li>
+</ul>
+&nbsp;
+<h3><span style="color: #ff6600;">Why Study at ITI?</span></h3>
+<ul>
+	<li>Fully maintained and well designed computer laboratories</li>
+	<li>Air conditioned seminar rooms</li>
+	<li>Evening classes available with affordable transport fees</li>
+	<li>Approved by National Training Counsil -NTC Reg.No#009 (POM)</li>
+	<li>Approved by National Training Counsil -NTC Reg .No # 074 (LAE)</li>
+	<li>Business Courses Offered on distance education mode</li>
+	<li>Special Corporate Training courses in IT, Business and Management</li>
+	<li>Special Corporate Training Facilities</li>
+	<li>A member of the International Federation of Training &amp; Development Organization ( IFTDO )</li>
+</ul>
+<h4></h4>
+<h4><span style="color: #ff6600;">Career Path of Diploma Holders</span></h4>
+Students who complete the ITI Diploma are eligible to access courses and services offered by:
+<ul>
+	<li>University of Southern Queensland (USQ) in study areas of business &amp; IT and Commerce. The mode of study can be either on – campus at Toowoomba Queensland Australia or distance mode.</li>
+	<li>Association of Accounting Technicians ( AAT – Australia )</li>
+	<li>Certified Practising Accountants of Papua New Guinea (CPA PNG) ￼￼￼￼￼￼￼￼￼￼￼</li>
+	<li>Ancharya Bangalore B School (ABBS – India) – A world class University and obtain a degree in 3 years</li>
+	<li>Griffith University – Study in Brisbane Australia with 5 locations to choose from</li>
+</ul>
+<div>
+<h3><span style="color: #ff6600;">Durations</span></h3>
+<strong>Certificate Courses:&nbsp;</strong>[17 wks] 17 weeks (Standard semester – Jan &amp; June) 12 weeks (October)
+<h4></h4>
+<strong>Diploma Courses:</strong>&nbsp;&nbsp;[34 weeks] 17 weeks (Standard semester – Jan &amp; June) 12 weeks (October)
+<h4></h4>
+<strong>Advance Diploma in Accounting &nbsp;</strong>[34 weeks] 17 weeks (Standard semester – January &amp; June)
+
+</div>							</div>
+							
+						</div>
+                    
+                    </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Toolbar-->
+            <div class="toolbar" style="height:50px;">
+                <div class="toolbar-inner" style="height:50px; text-align: center;">
+                    <!-- Toolbar links -->
+                    <a href="about.html" class="link" style="height:200px; text-align: center;"><i class="fa fa-university"></i>&nbsp; About us</a>
+                    <a href="#" class="link"><i class="fa fa-language"></i>&nbsp; Courses</a>
+                    <a href="#" class="link"><i class="fa fa-building"></i>&nbsp; Faculty</a>
+                    <a href="camera.html" class="link"><i class="fa fa-edit"></i>&nbsp; Apply</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>

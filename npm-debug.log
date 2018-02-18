@@ -1,0 +1,81 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'view',
+1 verbose cli   'FileTransfer',
+1 verbose cli   '--json' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.0
+4 silly mapToRegistry name FileTransfer
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'FileTransfer',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   escapedName: 'FileTransfer',
+7 silly mapToRegistry   name: 'FileTransfer',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/FileTransfer
+9 verbose request uri https://registry.npmjs.org/FileTransfer
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 4:55:02 PM
+12 verbose request id 7019d982051067ac
+13 http request GET https://registry.npmjs.org/FileTransfer
+14 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.120.162:443
+15 info attempt registry request try #2 at 4:55:33 PM
+16 http request GET https://registry.npmjs.org/FileTransfer
+17 http 404 https://registry.npmjs.org/FileTransfer
+18 verbose headers { 'content-type': 'application/json',
+18 verbose headers   'cache-control': 'max-age=0',
+18 verbose headers   'content-length': '2',
+18 verbose headers   'accept-ranges': 'bytes',
+18 verbose headers   date: 'Sat, 03 Feb 2018 11:57:08 GMT',
+18 verbose headers   via: '1.1 varnish',
+18 verbose headers   connection: 'keep-alive',
+18 verbose headers   'x-served-by': 'cache-cdg8735-CDG',
+18 verbose headers   'x-cache': 'MISS',
+18 verbose headers   'x-cache-hits': '0',
+18 verbose headers   'x-timer': 'S1517659027.151370,VS0,VE1095',
+18 verbose headers   vary: 'Accept-Encoding' }
+19 silly get cb [ 404,
+19 silly get   { 'content-type': 'application/json',
+19 silly get     'cache-control': 'max-age=0',
+19 silly get     'content-length': '2',
+19 silly get     'accept-ranges': 'bytes',
+19 silly get     date: 'Sat, 03 Feb 2018 11:57:08 GMT',
+19 silly get     via: '1.1 varnish',
+19 silly get     connection: 'keep-alive',
+19 silly get     'x-served-by': 'cache-cdg8735-CDG',
+19 silly get     'x-cache': 'MISS',
+19 silly get     'x-cache-hits': '0',
+19 silly get     'x-timer': 'S1517659027.151370,VS0,VE1095',
+19 silly get     vary: 'Accept-Encoding' } ]
+20 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/FileTransfer
+20 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+20 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
+20 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+20 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+20 verbose stack     at emitTwo (events.js:106:13)
+20 verbose stack     at Request.emit (events.js:191:7)
+20 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+20 verbose stack     at emitOne (events.js:96:13)
+20 verbose stack     at Request.emit (events.js:188:7)
+20 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+21 verbose statusCode 404
+22 verbose pkgid FileTransfer
+23 verbose cwd F:\zeeappsolutions\institution app\itiapp_123
+24 error Windows_NT 6.1.7601
+25 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "view" "FileTransfer" "--json"
+26 error node v6.11.0
+27 error npm  v3.10.10
+28 error code E404
+29 error 404 Registry returned 404 for GET on https://registry.npmjs.org/FileTransfer
+30 error 404
+31 error 404 'FileTransfer' is not in the npm registry.
+32 error 404 Your package name is not valid, because
+33 error 404 1. name can no longer contain capital letters
+34 error 404 Note that you can also install from a
+35 error 404 tarball, folder, http url, or git url.
+36 verbose exit [ 1, true ]

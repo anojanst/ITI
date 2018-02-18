@@ -1,0 +1,506 @@
+
+
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link" style="color: #fff;">
+                <i class="fa fa-angle-left"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <div class="center sliding">Apply Now</div>
+        <div class="right">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+
+
+
+    <div data-page="camera7" class="page">
+        <div class="page-content">
+            <div class="content-block">
+			      <div class="container loader" style="top:24%;
+    left: 29%;
+    position: fixed;display:none">
+
+    <div class="container-dot dot-a">
+      <div class="dot"></div>
+    </div>
+
+    <div class="container-dot dot-b">
+      <div class="dot"></div>
+    </div>
+    <div class="container-dot dot-c">
+      <div class="dot"></div>
+    </div>
+
+    <div class="container-dot dot-d">
+      <div class="dot"></div>
+    </div>
+
+    <div class="container-dot dot-e">
+      <div class="dot"></div>
+    </div>
+
+    <div class="container-dot dot-f">
+      <div class="dot"></div>
+    </div>
+    <div class="container-dot dot-g">
+      <div class="dot"></div>
+    </div>
+
+    <div class="container-dot dot-h">
+      <div class="dot"></div>
+    </div>
+
+
+  </div>
+   <div class="container success" style="top: 24%;
+    left: 29%;
+    position: fixed;display:none;  border-radius: 10px!important; 
+    color: #040408;
+    font-size: 15px;">
+
+   <p style="text-align:center">Your Application successfully received </p>
+     <p style="text-align:center">Thanks For Apply</p>
+
+  </div>
+                <div class="home" style="padding:0!important">
+				       <!-- Full preloader layout for MD theme -->
+					   
+					  
+                       <div class="form-style-5">
+ <form method="POST" id="uploadFormasd" enctype="multipart/form-data" action="">
+<fieldset>
+<legend><span class="number">1</span>Personal Details</legend>
+<label>Title</label>
+<select id="job" name="title" required>
+<optgroup label="Title">
+  <option value="Mr">Mr</option>
+  <option value="Mrs">Mrs</option>
+  <option value="Miss">Miss</option>
+  <option value="Other">Other</option>
+</optgroup>
+</select>  
+<label>Given Name: *</label>
+<input type="text" name="given_name" placeholder="" required>
+<label>Surname: *</label>
+<input type="text" name="surname" placeholder="" required>
+<label>Preferred Name in full: *</label>
+<input type="text" name="full_name" placeholder="*" required>
+<label>Date of Birth:(day / month / year) *</label>
+<input type="date" name="date_of_birth" placeholder="" required>
+<label>Gender : *</label>
+<select id="job" name="gender" required>
+<optgroup label="Gender" >
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+</optgroup>
+</select>
+<label>Place of Birth: *</label>
+<input type="text" name="place_of_birth" placeholder="" required>
+<label>Home Province: *</label>
+<input type="text" name="home_province" placeholder="" required>
+<label>District: *</label>
+<input type="text" name="district" placeholder="" required>
+<label>LLG: *</label>
+<input type="text" name="LLG" placeholder="">
+<label>Nationality: *</label>
+<input type="text" name="nationality" placeholder="" required>
+<label>Select Your Photo for upload: *</label>
+<input type="file" name="s_img" placeholder="" style="margin-bottom: 15px;" required>
+<legend><span class="number">2</span>Contact Details</legend>
+<label>Address in PNG or Overseas (if known): *</label>
+<input type="text" name="p_address" placeholder="">
+<label>Place you reside: *</label>
+<input type="text" name="place_you_reside" placeholder="">
+<label>Home / Work Telephone: *</label>
+<input type="text" name="telephone" placeholder="">
+<label>Fax: *</label>
+<input type="text" name="fax" placeholder="">
+<label>Mobile: *</label>
+<input type="text" name="mobile" placeholder="" required>
+<label>Email (if available):</label>
+<input type="email" name="email" placeholder="">
+<legend><span class="number">3</span>Education Detail (Secondary Education-highest level achieved)</legend>
+<label>Name of qualification (eg. Year 10 / 12, ‘A’ Levels):</label>
+<input type="text" name="name_of_q" placeholder="">
+<label>School Attended:</label>
+<input type="text" name="school_attended" placeholder="">
+<label>Completed:</label>
+<select id="job" name="completed">
+<optgroup label="Completed">
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</optgroup>
+</select>
+<label>Year Completed:</label>
+<input type="text" name="year_completed1" placeholder="">
+<label>Country / Province / City / Town:</label>
+<input type="text" name="c_address1" placeholder="">
+<legend><span class="number">4</span>Tertiary and further Education (Institution)</legend>
+<label>Name of qualification:</label>
+<input type="text" name="name_of_q2" placeholder="">
+<label>Institute attended:</label>
+<input type="text" name="institute_attended" placeholder="">
+<label>Completed:</label>
+<select id="job" name="Completed2">
+<optgroup label="Completed">
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</optgroup>
+</select>
+<label>Year Completed:</label>
+<input type="text" name="year_completed2" placeholder="">
+<label>Country / Province / City / Town:</label>
+<input type="text" name="c_address2" placeholder="">
+<p class="st_note" style="color:red">Please attach certify copies of all certificates and acadamic transcripts
+or mark sheets. </p>
+<legend><span class="number">5</span>Employment</legend>
+<label>Company:</label>
+<input type="text" name="company" placeholder="">
+<label>position:</label>
+<input type="text" name="position" placeholder="">
+<p class="st_note" style="color:red">If you believe you have relevant employment experience, please attach
+relevant details</p>
+<legend><span class="number">6</span> Program / Course selection</legend>
+<p class="st_note" style="color:red">Please complete the relevant section for each program / course and the semester of commencement.</p>
+
+<label>Location:</label>
+<select id="job" name="location">
+<optgroup label="Location">
+  <option value="Port Moresby">Port Moresby</option>
+  <option value="Lae">Lae</option>
+  <option value="Kimbe">Kimbe</option>
+  <option value="AROB">AROB</option>
+  <option value="Alotau">Alotau</option>
+  <option value="Goroka">Goroka</option>
+  <option value="Hagen">Hagen</option>
+  <option value="Kavieng">Kavieng</option>
+  <option value="Manus">Manus</option>
+  <option value="Kiunga">Kiunga</option>
+</optgroup>
+</select>
+
+<label>Program / Course ITI Program / Course commencement:</label>
+<select id="job" name="course_selected" required>
+<optgroup label="Programs">
+  <option value="Certificate in Computing">Certificate in Computing</option>
+  <option value="Certificate in Accounting">Certificate in Accounting</option>
+  <option value="Certificate in Business">Certificate in Business</option>
+  <option value="Certificate in Sales">Certificate in Sales</option>
+  <option value="Certificate in Human Resource Management">Certificate in Human Resource Management</option>
+  <option value="Diploma in Accounting">Diploma in Accounting</option>
+  <option value="Diploma in Computing">Diploma in Computing</option>
+  <option value="Diploma in Information Technology">Diploma in Information Technology</option>
+  <option value="Diploma in Management">Diploma in Management</option>
+  <option value="Diploma in Human Resource Management">Diploma in Human Resource Management</option>
+  <option value="Advanced Diploma in Accounting">Advanced Diploma in Accounting</option>
+ 
+</optgroup>
+</select>
+
+<label>Year: </label>
+<input type="number" name="year" min="2000" max="2099" step="1" value="2016" required>
+
+<label>Month: </label>
+<select id="job" name="c_month" required>
+<optgroup label="Month">
+  <option value="February">February</option>
+  <option value="July">July</option>
+</optgroup>
+</select>
+
+<legend><span class="number">7</span> Do you wish to apply for Exemption / Credits?</legend>
+<select id="job" name="credits">
+<optgroup label="Credits" required>
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</optgroup>
+</select>
+<p style="color:red">If yes, please refer to seperate exemption application form. Application for exemption are only considered once you have provided
+certified official subject outlines transcripts or results for the subject you are intending to apply</p>
+
+
+<legend><span class="number">8</span>  Are you applying for Evening Classes (5-9pm)?</legend>
+<label>If No, skip and go to 9.</label>
+<select id="job" name="evening_classes">
+<optgroup label="Evening classes">
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</optgroup>
+</select>
+<label>If Yes, do you require transportation for drop off?</label>
+<select id="job" name="require_trans">
+<optgroup label="Require transportation">
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</optgroup>
+</select>
+<label>If Yes, where is your act location?</label>
+<input type="text" name="act_location" placeholder="">
+
+<legend><span class="number">9</span> Request for learning support</legend>
+<label>Is there any thing that may affect your learning (for example
+impairments to your mobility, sight, hearing, reading or writing?)</label>
+<select id="job" name="learning_support">
+<optgroup label="learning support">
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</optgroup>
+</select>
+<label>If yes, please indicate your needs .</label>
+<textarea name="needs" placeholder="indicate your needs"></textarea>
+
+<legend><span class="number">10</span>  Sponsorship</legend>
+<select id="job" name="sponsorship">
+<optgroup label="Sponsorship">
+  <option value="Parents">Parents</option>
+  <option value="Self-sponsor">Self-sponsor</option>
+</optgroup>
+</select>
+<label>Name of Employer/Address:</label>
+<input type="text" name="s_address" placeholder="">
+<label>Other, (please specify):</label>
+<input type="text" name="s_other" placeholder="">
+<legend><span class="number">11</span> Other information</legend>
+<label>How did you first learn about ITI? you may tick more than one.</label>
+<select id="job" name="other_information">
+<optgroup label="About ITI">
+  <option value="Internet">Internet</option>
+  <option value="Exhibition / Seminar">Exhibition / Seminar</option>
+  <option value="Newspaper / Magazine / Poster">Newspaper / Magazine / Poster</option>
+  <option value="Television">Television</option>
+  <option value="Corporate visit">Corporate visit</option>
+  <option value="Recommended by ITI student / staff">Recommended by ITI student / staff</option>
+  
+</optgroup>
+</select>
+<legend><span class="number">12</span>  Disclaimer</legend>
+<label>I grant ITI permission to provide my parent(s), Guardian(s) or
+Sponsors when requested, with any information, to study,
+progress, results and attendances.
+</label>
+<select id="job" name="Disclaimer">
+<optgroup label="Disclaimer">
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</optgroup>
+</select>
+
+<legend><span class="number">13</span>  Application checklist</legend>
+<div style="float:left;width: 100%;">
+
+<div class="" style="width:90%;float:left">
+  <p>Completed all sections of the Application form</p>
+  </div>
+  <div class="" style="width:6%;float:left;text-align:center;margin: 1.1em 0;">
+   <input type="checkbox" value="true" name="application_checklist">
+  </div>
+  </div>
+  <div style="float:left;width: 100%;">
+<div class="" style="width:90%;float:left">
+  <p>Read Conditions of Enrollment, Deferral and fee Refund Policy</p>
+  </div>
+  
+<div class="" style="width:6%;float:left;text-align:center;margin: 1.1em 0;">
+   <input type="checkbox" required>
+  </div>
+  </div>
+  <div style="float:left;width: 100%;">
+
+<div class="" style="width:90%;float:left">
+  <p>Declared and signed the Application form</p>
+  </div>
+  <div class="" style="width:6%;float:left;text-align:center;margin: 1.1em 0;">
+   <input type="checkbox" required>
+  </div>
+  </div>
+  <div style="float:left;width: 100%;">
+
+<div class="" style="width:90%;float:left">
+  <p>Certified copies of your academic qualification</p>
+  </div>
+  <div class="" style="width:6%;float:left;text-align:center;margin: 1.1em 0;">
+   <input type="checkbox" >
+  </div>
+  </div>
+  <div style="float:left;width: 100%;">
+
+<div class="" style="width:90%;float:left">
+  <p>Any relevant employment documentation</p>
+  </div>
+  <div class="" style="width:6%;float:left;text-align:center;margin: 1.1em 0;">
+   <input type="checkbox" >
+  </div>
+  </div>
+  <div style="float:left;width: 100%;">
+
+<div class="" style="width:90%;float:left">
+  <p>Recommendation letter from sponsor</p>
+  </div>
+  <div class="" style="width:6%;float:left;text-align:center;margin: 1.1em 0;">
+   <input type="checkbox" >
+  </div>
+  </div>
+  
+  <legend><span class="number">14</span>  Fee Refund Policy</legend>
+  <p>Reimbursement of funds is strictly administered by the Registrar and the Management. In any event of cancellation or withdrawal, the refunds of
+any paid fees will only be considered under the following conditions<br>
+<strong>14.1 </strong> All correspondence regarding refund / excess payment must be in writing.<br>
+<strong>14.2 </strong>Before commencement date of course, full refund less K150.00 for administration costs will be paid.<br>
+<strong>14.1 </strong> All correspondence regarding refund / excess payment must be in writing.<br>
+<strong>14.3 </strong>After commencement date of course;<br>
+<strong>14.4(a) </strong>Withdrawals during the first week, 80% of THE TOTAL COURSE FEES will be refunded. ITI will withhold 20% of the total cost fee.<br>
+<strong>14.4(b)</strong>Withdrawals during the Second week, 70% of THE TOTAL COURSE FEES will be refunded. ITI will withhold 30% of the total cost fee.<br>
+<strong>14.4(c) </strong>Withdrawals during the third week, 60% of THE TOTAL COURSE FEES will be refunded. ITI will withhold 40% of the total cost fee.<br>
+<strong>14.4(d) </strong>After third week of the commencement date of the course, NO REFUND will be made.<br>
+<strong>14.4(e) </strong>Once Transport fees are paid and used NO MORE REFUNDS applicable.<br>
+<strong>14.5(a) </strong>Excess Payments: any excess payments of specified course fees will be reimbursed after realization of the deposit made.<br>
+<strong>14.5(b) </strong>Reimbursement will be processed upon return of all course materials and original receipts of payment.<br>
+<strong>14.6 </strong>If a student wishes to defer his / her course until a later semester(s), ITI will hold the fees untill the commencement of the new semester.<br>
+<strong>14.7 </strong>If the student subsequently withdraws, the refund policy will apply at the date the Institute was advised in writing. Four (4) weeks notice
+ will be allowed for administrative clearance.<br>
+<strong>14.8 </strong>All withdrawals & excess payments will be made payable to the sponsor</p>
+  <legend><span class="number">15</span>Declaration</legend>
+  <p>I declare that the information supplied by me in this form and relevant attachments is true and correct at the time of lodgement.
+I accept all liabilities for all fees payable for the specific course. I agree to abide by the above policies relating to Refund, Deferral
+and any regulations that may apply on registration. ITI has the discretion to take action on a matter that violate this declaration.</p>
+<label>Date</label>
+<input type="date"  name="date_get" />
+      
+</fieldset>
+<div  class="col-md-12 col-xs-12 text-left videos" id="video1" style="display:none">
+				    <hr>
+					
+				    <label>Add Certificate #1</label>
+					<input type="text" name="doc_title1" id="doc_title" class="form-control input-lg" placeholder="Certifcate Name" value="" tabindex="1">
+					<input type="text" name="doc_desc1" id="doc_desc" class="form-control input-lg" placeholder="Certificate Detal" value="" tabindex="1">
+					<input type="file" name="doc_url1" id="doc_desc" class="form-control input-lg"  value="" tabindex="1">
+				
+				</div>
+				<div  class=" col-md-12 col-xs-12 text-left videos" id="video2" style="display:none">
+				    <hr>
+					
+				    <label>Add Certificate #2</label>
+					<input type="text" name="doc_title2" id="doc_title" class="form-control input-lg" placeholder="Certifcate Name" value="" tabindex="1">
+					<input type="text" name="doc_desc2" id="doc_desc" class="form-control input-lg" placeholder="Certificate Detal" value="" tabindex="1">
+					<input type="file" name="doc_url2" id="doc_desc" class="form-control input-lg"  value="" tabindex="1">
+				
+				</div>
+				<div  class=" col-md-12 col-xs-12 text-left videos" id="video3" style="display:none">
+				    <hr>
+					
+				    <label>Add Certificate #3</label>
+					<input type="text" name="doc_title3" id="doc_title" class="form-control input-lg" placeholder="Certifcate Name" value="" tabindex="1">
+					<input type="text" name="doc_desc3" id="doc_desc" class="form-control input-lg" placeholder="Certificate Detal" value="" tabindex="1">
+					<input type="file" name="doc_url3" id="doc_desc" class="form-control input-lg"  value="" tabindex="1">
+				
+				</div>
+				<div  class=" col-md-12 col-xs-12 text-left videos" id="video4" style="display:none">
+				    <hr>
+				
+				    <label>Add Certificate #4</label>
+					<input type="text" name="doc_title4" id="doc_title" class="form-control input-lg" placeholder="Certifcate Name" value="" tabindex="1">
+					<input type="text" name="doc_desc4" id="doc_desc" class="form-control input-lg" placeholder="Certificate Detal" value="" tabindex="1">
+					<input type="file" name="doc_url4" id="doc_desc" class="form-control input-lg"  value="" tabindex="1">
+				
+				</div>
+				<div  class=" col-md-12 col-xs-12 text-left videos" id="video5" style="display:none">
+				    <hr>
+					
+				    <label>Add Certificate #5</label>
+					<input type="text" name="doc_title5" id="doc_title" class="form-control input-lg" placeholder="Certifcate Name" value="" tabindex="1">
+					<input type="text" name="doc_desc5" id="doc_desc" class="form-control input-lg" placeholder="Certificate Detal" value="" tabindex="1">
+					<input type="file" name="doc_url5" id="doc_desc" class="form-control input-lg"  value="" tabindex="1">
+				
+				</div>
+				<div  class=" col-md-12 col-xs-12 text-left videos" id="video6" style="display:none">
+				    <hr>
+					
+				    <label>Add Certificate #6</label>
+					<input type="text" name="doc_title6" id="doc_title" class="form-control input-lg" placeholder="Certifcate Name" value="" tabindex="1">
+					<input type="text" name="doc_desc6" id="doc_desc" class="form-control input-lg" placeholder="Certificate Detal" value="" tabindex="1">
+					<input type="file" name="doc_url6" id="doc_desc" class="form-control input-lg" " value="" tabindex="1">
+				
+				</div>
+				<div  class=" col-md-12 col-xs-12 text-left videos" id="video7" style="display:none">
+				    <hr>
+					
+				    <label>Add Certificate #7</label>
+					<input type="text" name="doc_title7" id="doc_title" class="form-control input-lg" placeholder="Certifcate Name" value="" tabindex="1">
+					<input type="text" name="doc_desc7" id="doc_desc" class="form-control input-lg" placeholder="Certificate Detal" value="" tabindex="1">
+					<input type="file" name="doc_url7" id="doc_desc" class="form-control input-lg"  value="" tabindex="1">
+				
+				</div>
+				<div  class=" col-md-12 col-xs-12 text-left videos" id="video8" style="display:none">
+				    <hr>
+					
+				    <label>Add Certificate #8</label>
+					<input type="text" name="doc_title8" id="doc_title" class="form-control input-lg" placeholder="Certifcate Name" value="" tabindex="1">
+					<input type="text" name="doc_desc8" id="doc_desc" class="form-control input-lg" placeholder="Certificate Detal" value="" tabindex="1">
+					<input type="file" name="doc_url8" id="doc_desc" class="form-control input-lg" " value="" tabindex="1">
+				
+				</div>
+				<div  class=" col-md-12 col-xs-12 text-left videos" id="video9" style="display:none">
+				    <hr>
+					
+				    <label>Form Document #9</label>
+					<input type="text" name="doc_title9" id="doc_title" class="form-control input-lg" placeholder="Certifcate Name" value="" tabindex="1">
+					<input type="text" name="doc_desc9" id="doc_desc" class="form-control input-lg" placeholder="Certificate Detal" value="" tabindex="1">
+					<input type="file" name="doc_url9" id="doc_desc" class="form-control input-lg"  value="" tabindex="1">
+				
+				</div>
+				<div  class=" col-md-12 col-xs-12 text-left videos" id="video10" style="display:none">
+				    <hr>
+					
+				    <label>Add Certificate #10</label>
+					<input type="text" name="doc_title10" id="doc_title" class="form-control input-lg" placeholder="Certifcate Name" value="" tabindex="1">
+					<input type="text" name="doc_desc10" id="doc_desc" class="form-control input-lg" placeholder="Certificate Detal" value="" tabindex="1">
+					<input type="file" name="doc_url10" id="doc_desc" class="form-control input-lg"  value="" tabindex="1">
+				
+				</div>
+				<div  class=" col-md-12 col-xs-12 text-left" style="width:100%">
+						<hr>
+						<a class="button_for_all" id="add_video">Add Certificate with this Form</a>
+						<a class="close_video hide1" style="display:none" >Delete Certificate</a>
+				</div>
+				
+
+				<div class="row" style="width:100%">
+					<div class="col-xs-12 col-md-12 text-center" style="width:100%">
+					
+					 <div class="gap40">
+					 </div>
+					
+					<input type="hidden" value=""  name="t_doc" id="t_video" />
+                    <input style="margin-top:35px" type="submit" value="Apply" />
+                       </div>
+									</form>
+							<style>
+							p{
+						       font-size:12px;
+							}
+							</style>
+ 
+
+                </div>     
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+

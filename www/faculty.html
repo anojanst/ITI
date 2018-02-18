@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Your app title -->
+    <title>ITI</title>
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal"  style="background-color: #2980b9; padding: 0;">
+        <div style="color: white; padding: 15px 15px 0pc 15px; margin-bottom: -25px;"><i class="fa fa-list"></i> Menu</div>
+        <div class="content-block" style="">
+            <div style="height: 20px; padding: 10px; background-color: #fff; margin-left: -15px; margin-right: -15px;">
+                <a href="index.html"><i class="fa fa-home"></i> Home</a>
+            </div>
+
+            <div style="height: 30px; padding-top: 10px;">
+                <a href="about.html" style="color:#fff;"><i class="fa fa-university"></i> About Us</a>
+            </div>
+            
+            <div style="height: 20px; padding: 10px; background-color: #fff; margin-left: -15px; margin-right: -15px;"><a href="courses.html"><i class="fa fa-language"></i> Courses</a></div>
+            
+            <div style="height: 30px; padding-top: 10px; color:#fff;"><a href="faculty.html" style="color:#fff;"><i class="fa fa-building"></i> Faculty</a></div>
+			
+            <div style="height: 20px; padding: 10px; background-color: #fff; margin-left: -15px; margin-right: -15px;"><a><i class="fa fa-edit"></i> Apply Now</a></div>
+        </div>
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar main-color">
+                <div class="navbar-inner">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="left sliding">
+                        <!--
+                          Right link contains only icon - additional "icon-only" class
+                          Additional "open-panel" class tells app to open panel when we click on this link
+                        -->
+                        <a href="#" class="link icon-only open-panel" style="color: #fff;"><i class="fa fa-list"></i></a>
+                    </div>
+                    <div class="center">ITI</div>
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="content-block">
+                          
+
+                            <div class="home">
+                                    <img src="img/courses.jpg" style="width: 100%;">
+                                    <h3 style="margin-top: -1px; color: #2980b9;">Welcome To Our Official App</h3>
+                                    <p style="margin-top: -8px;">We are proud to introduce our new app to our students for making their experience great! We believe this application will impress you.</p>
+									<div class="col-padded"><!-- inner custom column -->
+                                            
+                        
+                        <h1 class="page-title">Our Faculty</h1>
+                        
+                        <div class="news-body">
+                        
+                            <p class="call-out">
+                            Professional Members                            </p>
+                        
+                            								<p><span style="color: #ff6600;"><a style="color: #ff6600;" href="itfaculty7.html"><strong>Faculty of IT</strong></a></span></p>
+<p><span style="color: #ff6600;"><strong><a style="color: #ff6600;" href="b_faculty7.html">Faculty of Business</a></strong></span></p>
+				
+														
+							<!-- GALLERY -->
+							
+													<div class="clear"></div>
+						<!-- GALLERY -->
+						
+						             
+                        </div>
+                    
+                    </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Toolbar-->
+            <div class="toolbar" style="height:50px;">
+                <div class="toolbar-inner" style="height:50px; text-align: center;">
+                    <!-- Toolbar links -->
+                    <a href="about.html" class="link" style="height:200px; text-align: center;"><i class="fa fa-university"></i>&nbsp; About us</a>
+                    <a href="#" class="link"><i class="fa fa-language"></i>&nbsp; Courses</a>
+                    <a href="#" class="link"><i class="fa fa-building"></i>&nbsp; Faculty</a>
+                    <a href="camera.html" class="link"><i class="fa fa-edit"></i>&nbsp; Apply</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>

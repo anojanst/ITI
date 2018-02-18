@@ -10,15 +10,12 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
 
     <!-- Required meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
+
 
     <!-- Your app title -->
     <title>ITI</title>
@@ -30,7 +27,9 @@
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -52,11 +51,13 @@
                 <a href="about.html" style="color:#fff;"><i class="fa fa-university"></i> About Us</a>
             </div>
             
-            <div style="height: 20px; padding: 10px; background-color: #fff; margin-left: -15px; margin-right: -15px;"><a><i class="fa fa-language"></i> Courses</a></div>
+            <div style="height: 20px; padding: 10px; background-color: #fff; margin-left: -15px; margin-right: -15px;"><a class="link" href="affiliation7.html"><i class="fa fa-language"></i> Affiliation</a></div>
             
-            <div style="height: 30px; padding-top: 10px; color:#fff;"><a style="color:#fff;"><i class="fa fa-building"></i> Faculty</a></div>
-            
-            <div style="height: 20px; padding: 10px; background-color: #fff; margin-left: -15px; margin-right: -15px;"><a><i class="fa fa-edit"></i> Apply Now</a></div>
+            <div style="height: 30px; padding-top: 10px; color:#fff;"><a href="faculty7.html" style="color:#fff;"><i class="fa fa-building"></i> Faculty</a></div>
+			
+            <div style="height: 20px; padding: 10px; background-color: #fff; margin-left: -15px; margin-right: -15px;"><a href="camera7.html"><i class="fa fa-edit"></i> Apply Now</a></div>
+			<div style="height: 20px; padding: 10px; color:#fff; margin-left: -15px; margin-right: -15px;"><a href="contact7.html" style="color:#fff;"><i class="fa fa-edit"></i> Contact Us</a></div>
+			  <div style="height: 20px; padding: 10px; background-color: #fff; margin-left: -15px; margin-right: -15px;"><a class="link" href="downloads.html"><i class="fa fa-language"></i> Downloads</a></div>
         </div>
     </div>
 
@@ -89,15 +90,20 @@
                             <div class="welcome">
                                 <div class="welcome-icon"><i class="fa fa-star fa-3x" aria-hidden="true"></i></div>
                                 <div class="welcome-text">
-                                    <h3 style="margin-top: -1px; color: #2980b9;">Welcome To Our Official App</h3>
-                                    <p style="margin-top: -8px;">We are proud to introduce our new app to our students for making their experience great! We believe this application will impress you.</p>
+                                    <h3 style="margin-top: -1px; color: #2980b9;">Welcome to International Training Institute</h3>
+                                    <p style="margin-top: -8px;">We are proud to bring ITI closer to your hand. By using this App you will be able to decide your future better than never before</p>
                                 </div>
                             </div>
 
                             <div class="home">
                                     <img src="./img/cover.jpg" style="width: 100%;">
-                                    <h3 style="margin-top: -1px; color: #2980b9;">Welcome To Our Official App</h3>
-                                    <p style="margin-top: -8px;">We are proud to introduce our new app to our students for making their experience great! We believe this application will impress you.</p>
+                                    <h3 style="margin-top: -1px; color: #2980b9;">Welcome to International Training Institute</h3>
+                                    <p style="margin-top: -8px;">A short history before you step in
+                                    International Training Institute is one of the leading private
+                                    institution in Papua New Guniea and recognized by Department of Higher
+                                    Education, Research, Science and Technology. From our humble beginning
+                                    in 1999 with 30 students now we are contributing to Papua New Guinea
+                                    Human Resource development over 10 branches nationwide.</p>
                             </div>
 
                         </div>
@@ -108,10 +114,10 @@
             <div class="toolbar" style="height:50px;">
                 <div class="toolbar-inner" style="height:50px; text-align: center;">
                     <!-- Toolbar links -->
-                    <a href="about.html" class="link" style="height:200px; text-align: center;"><i class="fa fa-university"></i>&nbsp; About us</a>
-                    <a href="#" class="link"><i class="fa fa-language"></i>&nbsp; Courses</a>
-                    <a href="#" class="link"><i class="fa fa-building"></i>&nbsp; Faculty</a>
-                    <a href="camera.html" class="link"><i class="fa fa-edit"></i>&nbsp; Apply</a>
+                    <a href="about.html" class="link" style=" text-align: center;"><i class="fa fa-university"></i>&nbsp; About us</a>
+                    <a href="affiliation7.html" class="link"><i class="fa fa-language"></i>&nbsp; Affiliation</a>
+                    <a href="faculty7.html" class="link"><i class="fa fa-building"></i>&nbsp; Faculty</a>
+                    <a href="camera7.html" class="link"><i class="fa fa-edit"></i>&nbsp; Apply</a>
                 </div>
             </div>
         </div>

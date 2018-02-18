@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="iti.thekoders.com" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ITI.ITI" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>ITI</name>
     <description>
-        International Training Institute
+       International training institute
     </description>
-    <author email="ethanojan1@gmail.com" href="http://thekoders.com">
-        The Koders
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        ITI
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -15,5 +15,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <preference name="DisallowOverscroll" value="true" />
+    <allow-intent href="http://*/*" launch-external="yes" />
+    <allow-intent href="https://*/*" launch-external="yes" />
+    <allow-intent href="mailto:*" launch-external="yes" />
 </widget>

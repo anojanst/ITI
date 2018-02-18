@@ -7,14 +7,26 @@
         "files": {}
     },
     "installed_plugins": {
+        "com.cesidiodibenedetto.filechooser": {
+            "PACKAGE_NAME": "com.ITI.ITI"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "com.ITI.ITI"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.ITI.ITI"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.ITI.ITI"
+        },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "iti.thekoders.com"
+            "PACKAGE_NAME": "com.ITI.ITI"
         },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "iti.thekoders.com"
+        "cordova.plugins.diagnostic": {
+            "PACKAGE_NAME": "com.ITI.ITI"
         },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "iti.thekoders.com"
+        "phonegap-plugin-local-notification": {
+            "PACKAGE_NAME": "com.ITI.ITI"
         }
     },
     "dependent_plugins": {}
